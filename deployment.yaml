@@ -18,4 +18,4 @@ spec:
       - name: cafestatic
         image: shazilhameed/docker1:v1
         ports:
-        - containerPort: 8096
+        - containerPort: 8095
