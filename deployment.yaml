@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: maventomcat
+  labels:
+    app: maventomcat
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: maventomcat
+  template:
+    metadata:
+      labels:
+        app: maventomcat
+    spec:
+      containers:
+      - name: cafestatic
+        image: shazilhameed/docker1:v1
+        ports:
+        - containerPort: 8080
